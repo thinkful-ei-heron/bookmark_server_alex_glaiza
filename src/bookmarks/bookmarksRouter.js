@@ -96,9 +96,8 @@ bookmarksRouter
     logger.info(`Bookmark with id ${bookmarkId} deleted.`);
 
     res
-      
       .status(204)
-      .send(`Bookmark with id ${bookmarkId} deleted.`);
+      .end();
   });
 
 module.exports = bookmarksRouter;
